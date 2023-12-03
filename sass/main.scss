@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: black;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(3);
+    grid-template-rows: repeat(3);
+    gap: 2em;
+    width: 400px;
+    padding: 2em;
+    background-color: rgb(36, 36, 36);
+    border-radius: 15px;
+    color: #fff;
+
+    .header {
+        text-align: center;
+        grid-column: 1/4;
+        grid-row: 1/2;
+    }
+
+    .first-currency {
+        grid-column: 1/2;
+    }
+    .button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-column: 2/3;
+    }
+    .second-currency {
+        grid-column: 3/4;
+    }
+    .exchanged-text {
+        text-align: center;
+        grid-column: 1/4;
+    }
+}
+
+.currency-box {
+    display: flex;
+    flex-direction: column;
+}
+
+.number {
+    text-align: center;
+    padding: 0.4em;
+    font-size: 2em;
+    color: #fff;
+    background-color: transparent;
+    border: 1px solid transparent;
+    outline: 1px solid transparent;
+    width: 100%;
+}
