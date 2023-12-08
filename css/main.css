@@ -40,7 +40,7 @@ body {
 .container .second-currency {
   grid-column: 3/4;
 }
-.container .exchanged-text {
+.container .exchanged-output {
   text-align: center;
   grid-column: 1/4;
 }
